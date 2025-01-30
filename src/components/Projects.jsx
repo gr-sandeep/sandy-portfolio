@@ -69,11 +69,11 @@ const ScrollReveal = ({ children }) => {
 
 const ProjectCards = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen md:justify-start justify-center gap-40 px-14">
+    <div className="flex flex-col items-center min-h-screen md:justify-start justify-center gap-40 px-5 md:px-14">
       {projectsData.map((project) => (
         <ScrollReveal>
-          <div className="flex flex-col md:flex-row md:text-left gap-10 md:gap-20">
-            <div className="w-1/3">
+          <div className="flex flex-col items-center justify-center md:flex-row md:text-left gap-10 md:gap-20">
+            <div className="md:w-1/3 w-full flex place-content-center">
               <a href={project.link} target="_blank">
                 <img
                   className="rounded-md w-[600px] shadow-xl hover:scale-110 duration-500"
@@ -82,7 +82,7 @@ const ProjectCards = () => {
                 />
               </a>
             </div>
-            <div className="flex flex-col gap-5 px-10 w-2/3">
+            <div className="flex flex-col gap-5 md:px-10 md:w-2/3 w-full">
               <h1 className="text-2xl font-medium flex items-center justify-center md:justify-start gap-5">
                 {project.title}
                 <a

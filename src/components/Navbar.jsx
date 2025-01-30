@@ -9,13 +9,27 @@ const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-10 w-full flex items-center justify-between py-6 backdrop-blur-md px-10">
+    <nav className="fixed top-0 w-full flex items-center justify-between py-6 backdrop-blur-md px-5 md:px-20">
       <a
         href="#home"
-        className="title text-3xl opacity-100 hover:scale-110 cursor-pointer"
+        className="title text-xl sm:text-2xl md:text-3xl opacity-100 hover:scale-110 cursor-pointer"
       >
         G R Sandeep
       </a>
+
+      {isOpen ? (
+        <BiX
+          className="cursor-pointer block md:hidden"
+          onClick={() => setisOpen(!isOpen)}
+          fontSize={40}
+        />
+      ) : (
+        <BiMenu
+          className="cursor-pointer block md:hidden"
+          onClick={() => setisOpen(!isOpen)}
+          fontSize={40}
+        />
+      )}
 
       {/* nav items */}
       <motion.ul
@@ -79,95 +93,83 @@ const Navbar = () => {
         </a>
       </div>
 
-      {isOpen ? (
-        <BiX
-          className="cursor-pointer block md:hidden"
-          onClick={() => setisOpen(!isOpen)}
-          fontSize={40}
-        />
-      ) : (
-        <BiMenu
-          className="cursor-pointer block md:hidden"
-          onClick={() => setisOpen(!isOpen)}
-          fontSize={40}
-        />
-      )}
-
       {isOpen && (
         <div
           className={` ${
             isOpen ? "block" : "hidden"
-          } block md:hidden min-h-screen absolute top-24 right-0 w-full z-50 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] flex-col items-start justify-start gap-10 p-12`}
+          } block md:hidden min-h-screen absolute top-20 w-full z-50 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] flex-col items-start justify-start gap-10 p-12`}
         >
-          {/* nav items */}
-          <ul className="flex flex-col gap-10 items-center justify-center w-full text-2xl">
-            <a
-              href="#home"
-              onClick={() => setisOpen(false)}
-              className="cursor-pointer transition-all duration-300"
-            >
-              <li>Home</li>
-            </a>
-            <a
-              href="#tech"
-              onClick={() => setisOpen(false)}
-              className="cursor-pointer transition-all duration-300"
-            >
-              <li>Tech</li>
-            </a>
-            <a
-              href="#experience"
-              onClick={() => setisOpen(false)}
-              className="cursor-pointer transition-all duration-300"
-            >
-              <li>Experience</li>
-            </a>
-            <a
-              href="#projects"
-              onClick={() => setisOpen(false)}
-              className="cursor-pointer transition-all duration-300"
-            >
-              <li>Projects</li>
-            </a>
-            <a
-              href="#contact"
-              onClick={() => setisOpen(false)}
-              className="cursor-pointer transition-all duration-300"
-            >
-              <li>Contact</li>
-            </a>
+          <div>
+            {/* nav items */}
+            <ul className="flex flex-col gap-10 items-center justify-center w-full text-2xl">
+              <a
+                href="#home"
+                onClick={() => setisOpen(false)}
+                className="cursor-pointer transition-all duration-300"
+              >
+                <li>Home</li>
+              </a>
+              <a
+                href="#tech"
+                onClick={() => setisOpen(false)}
+                className="cursor-pointer transition-all duration-300"
+              >
+                <li>Tech</li>
+              </a>
+              <a
+                href="#experience"
+                onClick={() => setisOpen(false)}
+                className="cursor-pointer transition-all duration-300"
+              >
+                <li>Experience</li>
+              </a>
+              <a
+                href="#projects"
+                onClick={() => setisOpen(false)}
+                className="cursor-pointer transition-all duration-300"
+              >
+                <li>Projects</li>
+              </a>
+              <a
+                href="#contact"
+                onClick={() => setisOpen(false)}
+                className="cursor-pointer transition-all duration-300"
+              >
+                <li>Contact</li>
+              </a>
 
-            {/* social media icons */}
-            <div className="flex gap-6 items-center">
-              <a
-                href={linkedinUrl}
-                onClick={() => setisOpen(false)}
-                target="_blank"
-              >
-                <div className="cursor-pointer text-xl border-2 hover:border-blue-600  rounded-md transition-all duration-300 hover:text-blue-600 ">
-                  <FaLinkedinIn className="p-1" fontSize={32} />
-                </div>
-              </a>
-              <a
-                href={githubUrl}
-                onClick={() => setisOpen(false)}
-                target="_blank"
-              >
-                <div className="cursor-pointer rounded-md text-xl transition-all border-2 hover:border-gray-900 duration-300 ">
-                  <SiGithub className="p-1" fontSize={32} />
-                </div>
-              </a>
-              <a
-                href={personalEmail}
-                onClick={() => setisOpen(false)}
-                target="_blank"
-              >
-                <div className="cursor-pointer rounded-md text-xl transition-all border-2 hover:border-red-700 duration-300 hover:text-red-700 ">
-                  <SiGmail className="p-1" fontSize={32} />
-                </div>
-              </a>
-            </div>
-          </ul>
+              {/* social media icons */}
+              <div className="flex gap-6 items-center">
+                <a
+                  href={linkedinUrl}
+                  onClick={() => setisOpen(false)}
+                  target="_blank"
+                >
+                  <div className="cursor-pointer text-xl border-2 hover:border-blue-600  rounded-md transition-all duration-300 hover:text-blue-600 ">
+                    <FaLinkedinIn className="p-1" fontSize={32} />
+                  </div>
+                </a>
+                <a
+                  href={githubUrl}
+                  onClick={() => setisOpen(false)}
+                  target="_blank"
+                >
+                  <div className="cursor-pointer rounded-md text-xl transition-all border-2 hover:border-gray-900 duration-300 ">
+                    <SiGithub className="p-1" fontSize={32} />
+                  </div>
+                </a>
+                <a
+                  href={personalEmail}
+                  onClick={() => setisOpen(false)}
+                  target="_blank"
+                >
+                  <div className="cursor-pointer rounded-md text-xl transition-all border-2 hover:border-red-700 duration-300 hover:text-red-700 ">
+                    <SiGmail className="p-1" fontSize={32} />
+                  </div>
+                </a>
+              </div>
+            </ul>
+          </div>
         </div>
       )}
     </nav>

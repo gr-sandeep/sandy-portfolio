@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="px-16 flex min-h-screen w-full items-center justify-center"
+      className="flex min-h-screen items-center justify-center"
     >
       <div className="flex flex-col items-center justify-center gap-10">
         <motion.div
