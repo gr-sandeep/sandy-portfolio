@@ -43,9 +43,7 @@ const Experience = () => {
             alt=""
           />
           <div className="flex flex-col text-center md:text-left font-medium">
-            <p className="text-xl md:text-2xl">
-              GenAI Frontend Developer
-            </p>
+            <p className="text-xl md:text-2xl">GenAI Frontend Developer</p>
             <p className="text-base md:text-lg">
               Hexaware Technologies Ltd, Chennai
             </p>
@@ -58,31 +56,49 @@ const Experience = () => {
         <div className="flex flex-col items-center">
           <ul className="list-disc list-inside flex flex-col gap-5">
             <li>
-              Developed and launched multiple projects from scratch using
-              React.js, Tailwind CSS and Ant Design Components.
+              Spearheaded the development and launch of multiple projects using
+              React.js, Tailwind CSS, and Ant Design, ensuring efficient and
+              scalable web applications.
             </li>
             <li>
-              Implemented state management solutions like React Context, Redux,
-              and Zustand for efficient data handling and application
-              performance optimization based on project complexity.
+              Implemented state management with React Context, Redux, and
+              Zustand to optimize data handling and application performance.
             </li>
             <li>
-              Conducted and participated in code reviews and ensuring best
-              practices and standards are followed
+              Integrated GraphQL and REST APIs for dynamic data fetching and
+              real-time updates.
             </li>
             <li>
-              Utilized React Router for efficient navigation and routing in
-              applications.
+              Enhanced web performance by focusing on Core Web Vitals, utilizing
+              techniques like code splitting, lazy loading, and tree shaking to
+              improve LCP, FID, and CLS.
             </li>
             <li>
-              Produced multiple visual elements of web applications by
-              converting complex Adobe and Figma design wireframes into
-              interactive web applications
+              Leveraged AI-powered tools and WebAssembly for advanced AI/ML
+              features, incorporating OpenAI APIs to boost frontend performance.
             </li>
             <li>
-              Collaborating with backend developers, designers and other
-              stakeholders to seamlessly integrate frontend and backend
-              functionalities
+              Deployed applications on Vercel, gaining expertise in CI/CD
+              processes and foundational DevOps skills with Docker and
+              Kubernetes.
+            </li>
+            <li>
+              Conducted and actively participated in code reviews to ensure
+              adherence to best practices and standards.
+            </li>
+            <li>
+              Transformed complex design wireframes from Adobe and Figma into
+              interactive web applications.
+            </li>
+            <li>
+              Utilized React Testing Library for Unit Testing and Playwright for
+              end-to-end testing to ensure robust testing and seamless user
+              experiences, enhancing application reliability and performance.
+            </li>
+            <li>
+              Collaborated with backend developers and designers to ensure the
+              frontend aligns with design specifications and effectively handles
+              data from the backend.
             </li>
           </ul>
         </div>
