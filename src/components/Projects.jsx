@@ -61,6 +61,7 @@ const ScrollReveal = ({ children }) => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>
@@ -117,7 +118,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex flex-col items-center justify-center gap-16 lg:px-14"
+      className="flex flex-col items-center pt-20 justify-center gap-16 lg:px-14"
     >
       <motion.h1
         className="title text-3xl md:text-4xl"
