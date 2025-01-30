@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div
-      id="home"
-      className="flex min-h-screen items-center justify-center"
-    >
+    <div id="home" className="flex min-h-screen items-center justify-center">
       <div className="flex flex-col items-center justify-center gap-10">
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -36,6 +33,11 @@ const Hero = () => {
             on building clean, scalable applications. I create efficient
             solutions for dynamic user experiences. Let's build something great
             together!
+            <br />
+            <br />
+            Experienced React.js Developer with a strong background in building
+            efficient and scalable web applications. Proficinet in front-end
+            technologies such as HTML, CSS and JavaScript.
           </p>
         </motion.div>
       </div>

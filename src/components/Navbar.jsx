@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaDownload, FaLinkedinIn } from "react-icons/fa";
 import { SiGithub, SiGmail } from "react-icons/si";
 import { githubUrl, linkedinUrl, personalEmail } from "./Constants";
 import { BiMenu, BiX } from "react-icons/bi";
@@ -73,12 +73,18 @@ const Navbar = () => {
       {/* social media icons */}
       <div className="hidden md:flex gap-6 items-center">
         <a href={linkedinUrl} onClick={() => setisOpen(false)} target="_blank">
-          <div className="cursor-pointer text-xl border-2 rounded-md transition-all duration-300 opacity-100 hover:opacity-85 hover:scale-110">
+          <div
+            title="Linkedin"
+            className="cursor-pointer text-xl border-2 rounded-md transition-all duration-300 opacity-100 hover:opacity-85 hover:scale-110"
+          >
             <FaLinkedinIn className="p-1" fontSize={32} />
           </div>
         </a>
         <a href={githubUrl} onClick={() => setisOpen(false)} target="_blank">
-          <div className="cursor-pointer rounded-md text-xl transition-all border-2 duration-300 opacity-100 hover:opacity-85 hover:scale-110">
+          <div
+            title="GitHub"
+            className="cursor-pointer rounded-md text-xl transition-all border-2 duration-300 opacity-100 hover:opacity-85 hover:scale-110"
+          >
             <SiGithub className="p-1" fontSize={32} />
           </div>
         </a>
@@ -87,8 +93,23 @@ const Navbar = () => {
           onClick={() => setisOpen(false)}
           target="_blank"
         >
-          <div className="cursor-pointer rounded-md text-xl transition-all border-2 duration-300 opacity-100 hover:opacity-85 hover:scale-110">
+          <div
+            title="Send Email"
+            className="cursor-pointer rounded-md text-xl transition-all border-2 duration-300 opacity-100 hover:opacity-85 hover:scale-110"
+          >
             <SiGmail className="p-1" fontSize={32} />
+          </div>
+        </a>
+        <a
+          // href={personalEmail}
+          onClick={() => setisOpen(false)}
+          target="_blank"
+        >
+          <div
+            title="Download Resume"
+            className="cursor-pointer rounded-md text-xl transition-all border-2 duration-300 opacity-100 hover:opacity-85 hover:scale-110"
+          >
+            <FaDownload className="p-1.5" fontSize={32} />
           </div>
         </a>
       </div>
