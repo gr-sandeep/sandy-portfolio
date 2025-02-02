@@ -42,9 +42,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col items-center justify-center min-h-screen pt-20"
+      className="flex flex-col items-center justify-center min-h-screen md:pt-20"
     >
-      <div className="flex flex-col items-center justify-center gap-5">
+      <div className="flex flex-col items-center justify-center gap-5 px-10">
         <h1 className="title text-3xl md:text-4xl">Get in Touch</h1>
         <p className="text-center text-lg">
           Want to connect? Send me an email through this Web3Form and I'll
@@ -58,7 +58,7 @@ const Contact = () => {
           >
             <input
               title="Name"
-              className="shadow border-2 w-1/2 rounded-md p-2 outline-none"
+              className="shadow border-2 w-full md:w-1/2 rounded-md p-2 outline-none"
               placeholder="Enter your name"
               type="text"
               name="name"
@@ -66,7 +66,7 @@ const Contact = () => {
             />
             <input
               title="Email"
-              className="shadow border-2 rounded-md p-2 w-1/2 outline-none"
+              className="shadow border-2 rounded-md p-2 w-full md:w-1/2 outline-none"
               placeholder="Enter your email"
               type="email"
               name="email"
@@ -75,7 +75,7 @@ const Contact = () => {
             <textarea
               title="Message"
               placeholder="Enter your message"
-              className="shadow border-2 rounded-md p-2 w-1/2 outline-none"
+              className="shadow border-2 rounded-md p-2 w-full md:w-1/2 outline-none"
               name="message"
               required
             />

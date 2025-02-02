@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full flex items-center justify-between py-6 backdrop-blur-md px-5 md:px-20">
+    <nav className="fixed top-0 w-full flex items-center justify-between py-6 backdrop-blur-md px-5 lg:px-20">
       <a
         href="#home"
         className="title text-xl sm:text-2xl md:text-3xl opacity-100 hover:scale-110 cursor-pointer"
@@ -118,7 +118,7 @@ const Navbar = () => {
         <div
           className={` ${
             isOpen ? "block" : "hidden"
-          } block md:hidden min-h-screen absolute top-20 w-full z-50 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] flex-col items-start justify-start gap-10 p-12`}
+          } block md:hidden h-screen absolute top-20 w-full z-50 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]`}
         >
           <div>
             {/* nav items */}
