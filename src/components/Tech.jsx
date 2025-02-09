@@ -14,8 +14,11 @@ import { RiNextjsLine } from "react-icons/ri";
 import {
   SiAntdesign,
   SiDocker,
+  SiGraphql,
+  SiJest,
   SiRedux,
   SiVercel,
+  SiVite,
   SiWebpack,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -53,49 +56,9 @@ const Tech = () => {
           className="tech-box"
         >
           <h1 className="text-xl font-[500] underline">
-            Programming Languages
+            Frontend Languages and Frameworks
           </h1>
           <motion.div className="flex items-center gap-10">
-            <motion.div>
-              <BiLogoTypescript className="tech text-sky-500 " />
-              <p>TypeScript</p>
-            </motion.div>
-            <motion.div>
-              <BiLogoJavascript className="tech text-yellow-500 " />
-              <p>JavaScript</p>
-            </motion.div>
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="tech-box"
-        >
-          <h1 className="text-xl font-[500] underline">Frontend Frameworks</h1>
-          <motion.div className="flex items-center gap-5">
-            <motion.div className="flex flex-col items-center justify-center">
-              <BiLogoReact className="tech text-blue-500 " />
-              <p>React.js</p>
-            </motion.div>
-            <motion.div className="flex flex-col items-center justify-center">
-              <RiNextjsLine className="tech " />
-              <p>Next.js</p>
-            </motion.div>
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="tech-box mx-10"
-        >
-          <h1 className="text-xl font-[500] underline">
-            Markup / CSS Libraries
-          </h1>
-          <motion.div className="flex flex-wrap justify-center items-center">
             <motion.div className="flex flex-col items-center justify-center">
               <BiLogoHtml5 className="tech text-red-500 " />
               <p>HTML</p>
@@ -104,6 +67,31 @@ const Tech = () => {
               <BiLogoCss3 className="tech text-blue-500 " />
               <p>CSS</p>
             </motion.div>
+            <motion.div className="flex flex-col items-center justify-center">
+              <BiLogoJavascript className="tech text-yellow-500 " />
+              <p>JavaScript</p>
+            </motion.div>
+            <motion.div className="flex flex-col items-center justify-center">
+              <BiLogoTypescript className="tech text-sky-500 " />
+              <p>TypeScript</p>
+            </motion.div>
+            <motion.div className="flex flex-col items-center justify-center">
+              <BiLogoReact className="tech text-blue-500 " />
+              <p>React.js</p>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="tech-box mx-10"
+        >
+          <h1 className="text-xl font-[500] underline">
+            CSS Libraries and Frameworks
+          </h1>
+          <motion.div className="flex flex-wrap justify-center gap-5 items-center">
             <motion.div className="flex flex-col items-center justify-center">
               <BiLogoTailwindCss className="tech text-blue-500 " />
               <p>Tailwind CSS</p>
@@ -124,7 +112,7 @@ const Tech = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           className="tech-box"
@@ -139,15 +127,11 @@ const Tech = () => {
               <SiRedux className="tech p-2 text-purple-500 text-6xl" />
               <p>Redux</p>
             </motion.div>
-            <motion.div className="flex flex-col items-center justify-center">
-              <img src="/zustand.png" className="tech w-16 p-1" alt="" />
-              <p>Zustand</p>
-            </motion.div>
           </motion.div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           className="tech-box"
@@ -170,11 +154,19 @@ const Tech = () => {
               <SiWebpack className="tech p-2" />
               <p>WebPack</p>
             </motion.div>
+            <motion.div className="flex flex-col items-center justify-center">
+              <SiVite className="tech p-2 text-violet-600" />
+              <p>Vite</p>
+            </motion.div>
+            <motion.div className="flex flex-col items-center justify-center">
+              <SiGraphql className="tech p-2 text-pink-500" />
+              <p>GraphQL</p>
+            </motion.div>
           </motion.div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           className="tech-box"
@@ -186,8 +178,8 @@ const Tech = () => {
               <p>React Testing Library</p>
             </motion.div>
             <motion.div className="flex flex-col items-center justify-center">
-              <FaMasksTheater className="tech text-green-500 p-1" />
-              <p>Playwright</p>
+              <SiJest className="tech text-yellow-600 p-1" />
+              <p>Jest</p>
             </motion.div>
           </motion.div>
         </motion.div>

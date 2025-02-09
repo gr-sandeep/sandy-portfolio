@@ -61,8 +61,8 @@ const Experience = () => {
               scalable web applications.
             </li>
             <li>
-              Implemented state management with React Context, Redux, and
-              Zustand to optimize data handling and application performance.
+              Implemented state management with React Context, and Redux to
+              optimize data handling and application performance.
             </li>
             <li>
               Integrated GraphQL and REST APIs for dynamic data fetching and
@@ -74,13 +74,8 @@ const Experience = () => {
               improve LCP, FID, and CLS.
             </li>
             <li>
-              Leveraged AI-powered tools and WebAssembly for advanced AI/ML
-              features, incorporating OpenAI APIs to boost frontend performance.
-            </li>
-            <li>
               Deployed applications on Vercel, gaining expertise in CI/CD
-              processes and foundational DevOps skills with Docker and
-              Kubernetes.
+              processes and foundational DevOps skills with Docker.
             </li>
             <li>
               Conducted and actively participated in code reviews to ensure
@@ -91,8 +86,7 @@ const Experience = () => {
               interactive web applications.
             </li>
             <li>
-              Utilized React Testing Library for Unit Testing and Playwright for
-              end-to-end testing to ensure robust testing and seamless user
+              Utilized React Testing Library and Jest for testing to ensure robust testing and seamless user
               experiences, enhancing application reliability and performance.
             </li>
             <li>
