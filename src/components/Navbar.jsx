@@ -101,7 +101,8 @@ const Navbar = () => {
           </div>
         </a>
         <a
-          // href={personalEmail}
+          download
+          href="/G R Sandeep.pdf"
           onClick={() => setisOpen(false)}
           target="_blank"
         >

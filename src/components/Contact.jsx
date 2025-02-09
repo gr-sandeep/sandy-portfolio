@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaDownload, FaLinkedinIn } from "react-icons/fa";
 import { SiGithub, SiGmail } from "react-icons/si";
 import { githubUrl, linkedinUrl, personalEmail } from "./Constants";
 
@@ -118,6 +118,14 @@ const Contact = () => {
           <a href={personalEmail} target="_blank">
             <div className="cursor-pointer rounded-md transition-all border-2 duration-300 opacity-100 hover:opacity-85 hover:scale-110">
               <SiGmail className="p-1" fontSize={40} />
+            </div>
+          </a>
+          <a download href="/G R Sandeep.pdf" target="_blank">
+            <div
+              title="Download Resume"
+              className="cursor-pointer rounded-md text-xl transition-all border-2 duration-300 opacity-100 hover:opacity-85 hover:scale-110"
+            >
+              <FaDownload className="p-1.5" fontSize={40} />
             </div>
           </a>
         </motion.div>

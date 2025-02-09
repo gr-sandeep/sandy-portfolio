@@ -38,7 +38,7 @@ const Experience = () => {
       <div className="flex flex-col gap-10 border-2 shadow-lg shadow-white text-white items-center justify-center w-full p-10 rounded-lg">
         <div className="flex flex-col md:flex-row items-center gap-10">
           <img
-            src="/hexaware-logo.png"
+            src="/Hexaware.png"
             className="w-20 h-20 p-5 bg-white rounded-3xl shadow-lg"
             alt=""
           />

@@ -10,12 +10,12 @@ import {
   BiLogoVisualStudio,
 } from "react-icons/bi";
 import { IoLogoNpm } from "react-icons/io";
-import { RiNextjsLine } from "react-icons/ri";
 import {
   SiAntdesign,
   SiDocker,
   SiGraphql,
   SiJest,
+  SiMui,
   SiRedux,
   SiVercel,
   SiVite,
@@ -24,8 +24,6 @@ import {
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { VscAzure } from "react-icons/vsc";
 import { motion } from "framer-motion";
-import { LiaTheaterMasksSolid } from "react-icons/lia";
-import { FaMasksTheater } from "react-icons/fa6";
 import { GiOctopus } from "react-icons/gi";
 import { IoInfinite } from "react-icons/io5";
 
@@ -101,7 +99,7 @@ const Tech = () => {
               <p>Ant Design</p>
             </motion.div>
             <motion.div className="flex flex-col items-center justify-center">
-              <img src="/MaterialUI.svg" className="tech w-16 p-3" alt="" />
+              <SiMui className="tech text-blue-500 p-2" />
               <p>Material UI</p>
             </motion.div>
             <motion.div className="flex flex-col items-center justify-center">
