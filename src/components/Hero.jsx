@@ -11,8 +11,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="/Sandy.jpg"
-            className="w-[300px] h-[300px] md:h-[350px] md:w-[350px] rounded-full shadow-xl shadow-gray-100 hover:shadow-gray-200 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl "
+            src="/Portfolio Avatar.png"
+            className="size-[250px]  rounded-full transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl mt-10"
             alt="Image"
           />
         </motion.div>
