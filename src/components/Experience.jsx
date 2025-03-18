@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import moment from "moment";
+import Hexaware from "../assets/Hexaware.png";
 
 const Experience = () => {
   const startDate = moment("2022-08-04");
@@ -38,7 +39,7 @@ const Experience = () => {
       <div className="flex flex-col gap-10 border-2 shadow-lg shadow-white text-white items-center justify-center w-full p-10 rounded-lg">
         <div className="flex flex-col md:flex-row items-center gap-10">
           <img
-            src="/Hexaware.png"
+            src={Hexaware}
             className="w-20 h-20 p-5 bg-white rounded-3xl shadow-lg"
             alt=""
           />
@@ -86,8 +87,9 @@ const Experience = () => {
               interactive web applications.
             </li>
             <li>
-              Utilized React Testing Library and Jest for testing to ensure robust testing and seamless user
-              experiences, enhancing application reliability and performance.
+              Utilized React Testing Library and Jest for testing to ensure
+              robust testing and seamless user experiences, enhancing
+              application reliability and performance.
             </li>
             <li>
               Collaborated with backend developers and designers to ensure the

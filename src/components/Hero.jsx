@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Avatar from "../assets/Portfolio Avatar.png";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <img
-            src="/Portfolio Avatar.png"
+            src={Avatar}
             className="size-[250px]  rounded-full transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl mt-10"
             alt="Image"
           />

@@ -2,9 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { RxExternalLink } from "react-icons/rx";
 
+import EatCurious from "../assets/Eat-Curious.png";
+import DisneyClone from "../assets/Disney-Clone.png";
+import WeatherApp from "../assets/Weather-App.png";
+
 const projectsData = [
   {
-    image: "/Eat-Curious.png",
+    image: EatCurious,
     title: "Eat Curious",
     description: [
       "This project is a clone of the 'Eat Curious' website, developed using React and Tailwind CSS to ensure a modern and responsive design.",
@@ -24,7 +28,7 @@ const projectsData = [
     link: "https://sandy-eat-curious.vercel.app/",
   },
   {
-    image: "/Disney-Clone.png",
+    image: DisneyClone,
     title: "Disney Plus Clone",
     description: [
       "This project is a Disney Plus Clone developed using React and Tailwind CSS, offering a seamless user experience.",
@@ -43,7 +47,7 @@ const projectsData = [
     link: "https://sandy-disney.vercel.app/",
   },
   {
-    image: "/Weather-App.png",
+    image: WeatherApp,
     title: "Sandy Weather App",
     description: [
       "This is a responsive weather application developed using React and Tailwind CSS, leveraging the OpenWeatherMap free API to provide real-time weather updates",

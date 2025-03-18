@@ -99,12 +99,7 @@ const Contact = () => {
         </div>
 
         {/* social media icons */}
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 100, y: 0 }}
-          transition={{ duration: 1 }}
-          className="flex pt-20 gap-10 items-center"
-        >
+        <motion.div className="flex pt-20 gap-10 items-center">
           <a href={linkedinUrl} target="_blank">
             <div className="cursor-pointer border-2 rounded-md transition-all duration-300 opacity-100 hover:opacity-85 hover:scale-110">
               <FaLinkedinIn className="p-1" fontSize={40} />
@@ -130,12 +125,7 @@ const Contact = () => {
           </a>
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 100, y: 0 }}
-          transition={{ duration: 1 }}
-          className="flex text-center text-[10px] tracking-wider"
-        >
+        <motion.p className="flex text-center text-[10px] tracking-wider">
           Developed by G R Sandeep
         </motion.p>
       </div>
