@@ -69,10 +69,10 @@ const Tech = () => {
               <BiLogoJavascript className="tech text-yellow-500 " />
               <p>JavaScript</p>
             </motion.div>
-            <motion.div className="flex flex-col items-center justify-center">
+            {/* <motion.div className="flex flex-col items-center justify-center">
               <BiLogoTypescript className="tech text-sky-500 " />
               <p>TypeScript</p>
-            </motion.div>
+            </motion.div> */}
             <motion.div className="flex flex-col items-center justify-center">
               <BiLogoReact className="tech text-blue-500 " />
               <p>React.js</p>
@@ -202,10 +202,10 @@ const Tech = () => {
               <SiVercel className="tech p-2" />
               <p>Vercel</p>
             </motion.div>
-            <motion.div className="flex flex-col items-center justify-center">
+            {/* <motion.div className="flex flex-col items-center justify-center">
               <SiDocker className="tech text-blue-500 p-1" />
               <p>Docker</p>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </motion.div>
       </motion.div>
